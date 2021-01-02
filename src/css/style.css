@@ -1,6 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --text-color: black;
   --bg-color: #e5e7eb;
+  --main-font: "Inter", sans-serif;
+  /* --sec-font: "Messapia"; */
+  --font-size-s: 14px;
+  --font-size-m: 30px;
+  --font-size-l: 44px;
+  --font-size-xl: 54px;
+  --line-height-heading: 90%; /* 90->100*/
+  --line-height-para: 120%; /* 120->130*/
+  --tracking-heading: -1%; /* -1->+1*/
+  --tracking-para: -6%; /* -6->+0*/
 }
 
 /* border box */
@@ -15,7 +27,39 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1.7 "Source Sans Pro", Helvetica, Helvetica Neue, Arial, sans-serif;
+  /* font: 16px/1.7 "Source Sans Pro", Helvetica, Helvetica Neue, Arial, sans-serif; */
+  font-family: var(--main-font);
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+  background-image: url("../images/covers/test.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 16px;
+  display: flex;
+}
+.main-content {
+  flex-grow: 1;
+  /* border-radius: 32px; */
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.side-content {
+  width: 450px;
+  /* background-color: rgba(255, 255, 255, 0.26); */
+}
+
+.side-content img {
+  padding-left: 40px;
+  width: 300px;
 }

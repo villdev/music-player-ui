@@ -1,26 +1,26 @@
-import React from "react";
-import "./css/style.css";
+import React, { useEffect, useState } from "react";
 import * as Vibrant from "node-vibrant";
-import cover from "./images/covers/test.jpg";
-
-Vibrant.from(cover).getPalette((err, palette) => console.log(palette));
+import Main from "./js/Main";
+import Player from "./js/Player";
+// import cover from "./images/covers/test.jpg";
+import cover from "./images/covers/test2.webp";
+import "./css/style.css";
 
 export default function App() {
+  const [color, setColor] = useState([0, 0, 0]);
+
+  useEffect(() => {
+    Vibrant.from(cover).getPalette((err, palette) =>
+      setColor(palette.DarkVibrant._rgb)
+    );
+  }, []);
   return (
-    <div className="container">
-      <div className="main-content">
-        <h1>TEST</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
-          explicabo earum ut labore libero, magnam sint ad modi quisquam hic
-          minima eveniet totam sunt officiis ipsum repudiandae aspernatur
-          facilis! Quod.
-        </p>
-      </div>
-      <div className="side-content">
-        <h2>test</h2>
-        <img src={cover} alt="" />
-      </div>
+    <div
+      className="container"
+      style={{ backgroundColor: `rgb(${color[0]},${color[1]},${color[2]})` }}
+    >
+      <Main />
+      <Player cover={cover} />
     </div>
   );
 }

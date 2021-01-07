@@ -6,15 +6,15 @@ export default function Trending() {
   return (
     <div className="trending">
       <div className="trending-header">
-        <h3>Trending</h3>
+        <div>Trending</div>
       </div>
       <ul className="trending-items">
         <li>
-          <div className="trending--items__number">01</div>
-          <div className="trending-items__cover">
+          <div className="trending--item__number">01</div>
+          <div className="trending-item__cover">
             <img src={cover} alt="" />
           </div>
-          <div className="trending-items__title">
+          <div className="trending-item__title">
             <div className="trending-name">Some Name</div>
             <div className="trending-artist">Some Band</div>
           </div>

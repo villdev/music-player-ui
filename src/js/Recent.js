@@ -7,7 +7,7 @@ export default function Recent() {
   return (
     <div className="recent">
       <div className="recent-header">
-        <h1>Recent</h1>
+        <div>Recent</div>
         <div className="recent-controls">
           <img src={left} alt="" />
           <img src={right} alt="" />

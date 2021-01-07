@@ -1,5 +1,7 @@
 import React from "react";
-import logo from "../images/logo.png";
+// import logo from "../images/logo.png";
+// import logo2 from "../images/logo2.png";
+import logo3 from "../images/logo3.png";
 import avatar from "../images/avatar.jpeg";
 
 export default function Navbar() {
@@ -8,8 +10,8 @@ export default function Navbar() {
       <nav className="nav-bar">
         <ul>
           <li>
-            <a href="#">
-              <img src={logo} alt="" />
+            <a href="#" className="logo">
+              <img src={logo3} alt="" />
             </a>
           </li>
           <li>

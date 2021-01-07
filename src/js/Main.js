@@ -9,8 +9,10 @@ export default function Main() {
     <div className="main-content">
       <Navbar />
       <Recent />
-      <Playlist />
-      <Trending />
+      <div className="last-row">
+        <Playlist />
+        <Trending />
+      </div>
     </div>
   );
 }

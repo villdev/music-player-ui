@@ -302,9 +302,150 @@ body {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
 }
 
-.side-content img {
-  padding-left: 40px;
+.player-cover {
+  /* padding-left: 40px; */
   width: 300px;
+  border-radius: 10px;
+  /* height: 400px; */
+}
+.player-title {
+  margin-top: 32px;
+  font-size: 36px;
+  color: white;
+  font-weight: 600;
+}
+.player-artist {
+  font-size: 20px;
+  color: rgb(216, 214, 214);
+  font-weight: 600;
+}
+.player-album {
+  font-size: 20px;
+  font-weight: 100;
+  /* color: white; */
+  color: #a0a1a3;
+}
+.player-seeker {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+.current-time {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  margin-right: 8px;
+}
+.end-time {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 8px;
+}
+.seeker-bar {
+  width: 220px;
+  height: 4px;
+  /* color: #a0a1a3; */
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+}
+.seeker-current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  border-radius: 8px;
+}
+.seeker-current::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 108px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid #e5e7eb;
+}
+.controls {
+  /* flex-grow: 1; */
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.play {
+  width: 60px;
+}
+.play-wrapper {
+  /* background-color: #a0a1a3; */
+  /* border-radius: 12px; */
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.prev,
+.next,
+.like,
+.volume {
+  width: 30px;
+}
+
+.controls-playlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+  color: rgb(221, 221, 221);
+  font-size: 15px;
+}
+
+.player-lyrics {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #a0a1a3;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.lyrics-header {
+  /* color: white; */
+  font-size: 15px;
+  font-weight: 600;
+}
+.lyrics {
+  width: 100%;
+  height: 160px;
+  overflow: auto;
+  font-weight: 100;
 }

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import * as Vibrant from "node-vibrant";
 import Main from "./js/Main";
 import Player from "./js/Player";
-// import cover from "./images/covers/test.jpg";
-import cover from "./images/covers/test2.webp";
+import cover from "./images/covers/test.jpg";
+// import cover from "./images/covers/test2.webp";
 import "./css/style.css";
 
 export default function App() {

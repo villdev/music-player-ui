@@ -17,7 +17,7 @@ export default function Player({ cover }) {
   return (
     <div className="side-content" style={sideContentStyle}>
       <div className="player">
-        <img src={cover} alt="" />
+        <img src={cover} alt="" className="player-cover" />
         <div className="player-title">Green Light</div>
         <div className="player-artist">Lorde</div>
         <div className="player-album">Melodrama</div>
@@ -30,16 +30,48 @@ export default function Player({ cover }) {
         </div>
         <div className="controls">
           <div className="controls-main">
-            <img src={like} alt="" />
-            <img src={prev} alt="" />
-            <img src={play} alt="" />
-            <img src={next} alt="" />
-            <img src={volume} alt="" />
+            <div className="controls-wrapper">
+              <img className="like" src={like} alt="" />
+            </div>
+            <div className="controls-wrapper">
+              <img className="prev" src={prev} alt="" />
+            </div>
+            <div className="controls-wrapper play-wrapper">
+              <img className="play" src={play} alt="" />
+            </div>
+            <div className="controls-wrapper">
+              <img className="next" src={next} alt="" />
+            </div>
+            <div className="controls-wrapper">
+              <img className="volume" src={volume} alt="" />
+            </div>
           </div>
           <div className="controls-playlist">
             <img src={repeat} alt="" />
             <div className="player-playlist">Playing from TEMP</div>
             <img src={shuffle} alt="" />
+          </div>
+        </div>
+        <div className="player-lyrics">
+          <div className="lyrics-header">Lyrics</div>
+          <div className="lyrics">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              unde nostrum nihil non, eum molestias nobis itaque sed
+              repellendus, hic iure. Sapiente ex error, similique corrupti
+              quisquam autem assumenda qui!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              unde nostrum nihil non, eum molestias nobis itaque sed
+              repellendus, hic iure. Sapiente ex error, similique corrupti
+              quisquam autem assumenda qui!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+              pariatur aperiam ab earum mollitia quo nostrum est incidunt,
+              distinctio.
+            </p>
           </div>
         </div>
       </div>

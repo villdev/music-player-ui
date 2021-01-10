@@ -18,6 +18,41 @@ export default function Playlist() {
             <div className="recent-item__by">by Temp</div>
           </div>
         </li>
+        <li>
+          <img src={cover} alt="" />
+          <div className="recent-item__details">
+            <div className="recent-item__title">Name</div>
+            <div className="recent-item__by">by Temp</div>
+          </div>
+        </li>
+        <li>
+          <img src={cover} alt="" />
+          <div className="recent-item__details">
+            <div className="recent-item__title">Name</div>
+            <div className="recent-item__by">by Temp</div>
+          </div>
+        </li>
+        <li>
+          <img src={cover} alt="" />
+          <div className="recent-item__details">
+            <div className="recent-item__title">Name</div>
+            <div className="recent-item__by">by Temp</div>
+          </div>
+        </li>
+        <li>
+          <img src={cover} alt="" />
+          <div className="recent-item__details">
+            <div className="recent-item__title">Name</div>
+            <div className="recent-item__by">by Temp</div>
+          </div>
+        </li>
+        <li>
+          <img src={cover} alt="" />
+          <div className="recent-item__details">
+            <div className="recent-item__title">Name</div>
+            <div className="recent-item__by">by Temp</div>
+          </div>
+        </li>
       </ul>
     </div>
   );
